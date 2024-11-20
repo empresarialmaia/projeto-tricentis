@@ -30,8 +30,8 @@ public class FormularioAutomobileTest {
 
 	}
 
-	@When("preenche todos os campos obrigatorios do formulario Vehicle Data e clicar em Next para avancar")
-	public void preencheTodosOsCamposObrigatoriosDoFormularioVehicleDataEClicarEmNextParaAvancar() {		
+	@When("preencher todos os campos obrigatorios na tela Vehicle Data e clicar em Next para avancar")
+	public void preencheTodosOsCamposObrigatoriosNaTelaVehicleDataEClicarEmNextParaAvancar() {		
 		page.preencherDadosFomularioParte01(
 				"BMW",
 				"1000", 
@@ -47,8 +47,8 @@ public class FormularioAutomobileTest {
 		
 	}
 	
-	@When("preencher todos os campos obrigatorios do formulario Insurance Data e clicar em Next para avancar")
-	public void preencherTodosOsCamposObrigatoriosDoFormularioInsuranceDataEClicarEmNextParaAvancar() {		
+	@When("preencher todos os campos obrigatorios na tela Insurance Data e clicar em Next para avancar")
+	public void preencherTodosOsCamposObrigatoriosNaTelaInsuranceDataEClicarEmNextParaAvancar() {		
 		page.preencherDadosFomularioParte02(
 				"Eduardo",
 				"Maia", 

@@ -13,8 +13,8 @@ Feature: Preecher formulario de seguro Automobile
   @positivo
   Scenario: Preencher com sucesso o formulario de seguro Automobile 
     When clicar no menu Automobile
-    And preenche todos os campos obrigatorios do formulario Vehicle Data e clicar em Next para avancar
-    And preencher todos os campos obrigatorios do formulario Insurance Data e clicar em Next para avancar
+    And preencher todos os campos obrigatorios na tela Vehicle Data e clicar em Next para avancar
+    And preencher todos os campos obrigatorios na tela Insurance Data e clicar em Next para avancar
     And preencher todos os campos obrigatorios na tela Product Data e clicar em Next para avancar
     And preencher todos os campos obrigatorios na tela Price Option e clicar em Next para avancar
     And preencher os campos obrigatorios na tela Send Quote e clicar em Send para enviar a cotacao
