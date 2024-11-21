@@ -15,7 +15,7 @@ import tricentis.drivers.Drivers;
 		features = "src/test/resources/features",
 		glue = "tricentis.steps",
 		tags = "@positivo",
-		dryRun = true,
+		dryRun = false,
 		monochrome = false,
 		snippets = SnippetType.CAMELCASE,
 		plugin = {"pretty","html:target/cucumber-report.html"}

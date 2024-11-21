@@ -10,7 +10,7 @@ Feature: Preecher formulario de seguro Automobile
     Given que esteja na tela principal do site "https://sampleapp.tricentis.com/101/index.php"
 
 
-  @positivo @ComSucesso
+  @positivo @comSucesso
   Scenario: Preencher com sucesso o formulario de seguro Automobile 
     When clicar no menu Automobile
     And preencher todos os campos obrigatorios na tela Vehicle Data e clicar em Next para avancar
