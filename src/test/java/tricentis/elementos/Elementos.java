@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 
 public class Elementos {
 	
-	//Home page
+	//Página inicial
 	public By automobile = By.id("nav_automobile");
 	public By textoHome = By.xpath("//h2[contains(text(),'Welcome Aboard!')]");
-	//public By textoHome = By.id("downloadtrial");
 	
+	//Home page
 	//Parte 01 - Enter Vehicle Data
 	public By makeSelectCar = By.id("make");
 	public By enginePerformance = By.id("engineperformance");
