@@ -121,8 +121,8 @@ public class FormularioAutomobilePage {
 	public void confirmacaoEnvioDoCadastro(String textoConfirmacao, 
 			String nomeDoTeste, String nomeDaEvidencia) {
 		
-		metodo.esperarElemento(elemento.msgConformacao);
-		metodo.validarTexto(elemento.msgConformacao, textoConfirmacao);
+		metodo.esperarElemento(elemento.msgConfirmacao);
+		metodo.validarTexto(elemento.msgConfirmacao, textoConfirmacao);
 		metodo.tirarPrint(nomeDoTeste, nomeDaEvidencia);
 		metodo.clicar(elemento.btnOk);
 		

@@ -83,7 +83,7 @@ public class Elementos {
 	//Parte 06 - Confirmação de cadastro 
 	
 	public By btnOk = By.xpath("//div[@class='sa-confirm-button-container']");
-	public By msgConformacao = By.xpath("//h2[contains(text(),'Sending e-mail success!')]");
+	public By msgConfirmacao = By.xpath("//h2[contains(text(),'Sending e-mail success!')]");
 	
 	
 	
