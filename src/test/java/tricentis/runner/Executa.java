@@ -12,38 +12,44 @@ import tricentis.drivers.Drivers;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/features",
-		glue = "tricentis.steps",
-		tags = "@positivo",
-		dryRun = false,
-		monochrome = false,
-		snippets = SnippetType.CAMELCASE,
-		plugin = {"pretty","html:target/cucumber-report.html"}
-		
-		
-		)
+		features = "src/test/resources/features", 
+        glue = "tricentis.steps", 
+        tags = "@positivo", 
+        dryRun = false, 
+        monochrome = false, 
+        snippets = SnippetType.CAMELCASE, 
+        plugin = {"pretty", "html:target/cucumber-report.html" }
+
+)
 
 public class Executa extends Drivers {
-	
-	public static void iniciarTest(String url, String tipo) {
-		if(tipo.equalsIgnoreCase("Chrome")) {
+
+	public static void iniciarTest(String url, String navegador) {
+
+		switch (navegador) {
+		case "Chrome":
 			driver = new ChromeDriver();
+			break;
 			
-		}else if(tipo.equalsIgnoreCase("Edge")) {
+		case "Edge":
 			driver = new EdgeDriver();
-			
-		}else if(tipo.equalsIgnoreCase("Firefox")) {
+			break;
+
+		case "Firefox":
 			driver = new FirefoxDriver();
+			break;
+
+		default:
+			throw new IllegalArgumentException("Navegador não reconhecido:" + navegador);
+
 		}
-	   
-	   driver.manage().window().maximize();
-	   driver.get(url);
-	   
-	
+		driver.manage().window().maximize();
+		driver.get(url);
+
 	}
-	
+
 	public static void encerrarTest() {
-		if(driver != null) {
+		if (driver != null) {
 			driver.quit();
 		}
 	}

@@ -18,7 +18,7 @@ public class FormularioAutomobileTest {
 	
 	@Given("que esteja na tela principal do site {string}")
 	public void queEstejaNaTelaPrincipalDoSite(String url) {
-		Executa.iniciarTest(url, "Edge");
+		Executa.iniciarTest(url, "Chrome");
 
 	}
 
